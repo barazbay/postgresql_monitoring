@@ -24,7 +24,7 @@ jupyter/data/monitoring_tools/*/image_map.csv:
 
 jupyter/data/monitoring_tools/*/metric_map.csv:
 - metric_id
-- matric_main_id
+- metric_main_id
 
 jupyter/data/monitoring_tools/*/metrics.csv:
 - metric_id
