@@ -5,8 +5,7 @@ monitoring system comparison database
 
 ### Desired metric collection  
 jupyter/data/main/metrics_main.csv:
-- fields
-- metric_id
+- matric_main_id
 - category
 - subcategory
 - metric_name
@@ -27,4 +26,13 @@ jupyter/data/monitoring_tools/*/metric_map.csv:
 - metric_id
 - matric_main_id
 
-jupyter/data/monitoring_tools/*/metrics.csv
+jupyter/data/monitoring_tools/*/metrics.csv:
+- metric_id
+- metric_name
+- description
+
+jupyter/data/monitoring_tools/*/triggers.csv:
+- metric_id
+- trigger_id
+- expression
+- description
