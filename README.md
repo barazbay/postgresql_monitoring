@@ -36,3 +36,4 @@ jupyter/data/monitoring_tools/*/triggers.csv:
 - trigger_id
 - expression
 - description
+- severity
