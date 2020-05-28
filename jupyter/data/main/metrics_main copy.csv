@@ -1,45 +1,4 @@
-metric_main_id,category,subcategory,metric_name,extension,importance
-1,System,Basic,CPU,,high
-2,System,Basic,LA,,high
-3,System,Basic,Memory usage,,medium
-4,System,Basic,Memory errors,,medium
-5,System,Basic,Swap usage,,unspecified
-6,System,Basic,Swap I/O,,high
-7,System,Disk,Read and write latency,,high
-8,System,Disk,IOPS (read and write),,medium
-9,System,Disk,Throughput (read and write),,medium
-10,System,Disk,% util / io usage,,unspecified
-11,System,Disk,Disk space,,high
-12,System,Disk,Page cache hit/miss,,high
-13,System,Network,Bandwidth,,medium
-14,System,Network,"Errors, dropped packets",,medium
-15,System,Network,Packets/second,,unspecified
-16,System,Network,Connections (in / out; per status / per IP),,unspecified
-17,System,Process analysis,Top-N by CPU load,,unspecified
-18,System,Process analysis,Top-N by RAM load,,unspecified
-19,System,Process analysis,Top-N by disk reads (IOPS and throughput),,unspecified
-20,System,Process analysis,Top-N by disk writes (IOPS and throughput),,unspecified
-21,System,Process analysis,Top-N by swap (amount + rates),,unspecified
-22,System,Process analysis,Top-N by process count and by threads count,,unspecified
-23,System,Process analysis,Top-N by open files,,unspecified
-24,Postgresql,Main,Average query time,,high
-25,Postgresql,Main,Connections (by state in pg_stat_activity),pg_stat_activity,high
-26,Postgresql,Main,Top-N transactions by age,,unspecified
-27,Postgresql,Main,Total query time (by query group from pg_stat_statements),pg_stat_statements,medium
-28,Postgresql,Main,Buffers hits and reads (by query group from pg_stat_statements),pg_stat_statements,unspecified
-29,Postgresql,Main,"Buffers written, dirtied (by query group from pg_stat_statements)",pg_stat_statements,unspecified
-30,Postgresql,Main,Transactions (committed vs rolled back),,high
-31,Postgresql,Main,Replication lags,,high
-32,Postgresql,Autovacuum,Workers (by mode: main vs tx ID wraparound),,unspecified
-33,Postgresql,Autovacuum,Top-N tables (and DBs) by autovacuum pending work,,unspecified
-34,Postgresql,Autovacuum,"TXs left (tx ID wraparound), database transaction age",,unspecified
-35,Postgresql,Autovacuum,Autovacuum queue and progress https://gitlab.com/snippets/1889668,,medium
-36,Postgresql,Bloat (estimated),Table bloat (estimated),,unspecified
-37,Postgresql,Bloat (estimated),Index bloat (estimated),,unspecified
-38,Postgresql,'"Checkpoints, bgwriter",Disk writes (by processes)',,unspecified
-39,Postgresql,'"Checkpoints, bgwriter",Pages dirtied by queries',,unspecified
-40,Postgresql,'"Checkpoints, bgwriter",Checkpoints issued',,medium
-41,Postgresql,Connections,# of connections by state + max_connections,,medium
+matric_main_id,category,subcategory,metric_name,extension,importance
 42,Postgresql,Connections,Connections by client address (active + all),,medium
 43,Postgresql,Connections,Connections by app (active + all),,medium
 44,Postgresql,Connections,Connections by DB role,,medium
@@ -79,8 +38,8 @@ metric_main_id,category,subcategory,metric_name,extension,importance
 78,Postgresql,WAL,"WAL files count (total, unarchived)",,unspecified
 79,Postgresql,WAL,WAL directory size,,unspecified
 80,Postgresql,WAL,"WAL files which ready to be archived (count of files in pg_xlog/pg_wal/archive_status which end in "".ready"")",,unspecified
-81,Postgresql,Transactions,Transactions per second (TPS),,unspecified
-82,Postgresql,Transactions,Long-running transactions / max transaction age,,high
+81,Postgresql,"Transactions,Transactions per second (TPS)",,unspecified
+82,Postgresql,"Transactions,Long-running transactions / max transaction age",,high
 83,Postgresql,qan,Top-N by total_time,pg_stat_statements,high
 84,Postgresql,qan,Top-N by mean_time (avg time),pg_stat_statements,high
 85,Postgresql,qan,Top-N by calls,pg_stat_statements,high
@@ -112,15 +71,3 @@ metric_main_id,category,subcategory,metric_name,extension,importance
 111,Postgresql,qan,Query examples,,uncertain
 112,Postgresql,qan,Plan examples,,uncertain
 113,Postgresql,qan,"Connections, disconnections",,uncertain
-114,Postgresql,pgBouncer monitoring,From pgbouncer log:,,uncertain
-115,Postgresql,pgBouncer monitoring,Average query time,,uncertain
-116,Postgresql,pgBouncer monitoring,Average transaction time,,uncertain
-117,Postgresql,pgBouncer monitoring,Queries per second (QPS),,uncertain
-118,Postgresql,pgBouncer monitoring,Transactions per second (TPS),,uncertain
-119,Postgresql,pgBouncer monitoring,"Traffic in and out, B/s",,uncertain
-120,Postgresql,pgBouncer monitoring,Number of connections by client addr,,uncertain
-121,Postgresql,pgBouncer monitoring,"Connections between pgBouncer and Postgres, by state",,uncertain
-122,Postgresql,pgBouncer monitoring,Utilization for each pool,,uncertain
-123,Postgresql,pgBouncer monitoring,Waiting clients and waiting time,,unspecified
-124,Postgresql,Backups,Time from last successful time (graph),,unspecified
-125,Postgresql,Backups,Last backup size (graph),,unspecified
