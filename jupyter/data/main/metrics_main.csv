@@ -59,7 +59,7 @@ metric_main_id,category,subcategory,metric_name,extension,importance
 58,Postgresql,Tables,"Table sizes (total, heap, TOAST, indexes)",,unspecified
 59,Postgresql,Tables,Estimated rows,,unspecified
 60,Postgresql,Tables,Top-N by seqscan,,unspecified
-61,Postgresql,Tables,Top-N by blocks read,,unspecified
+61,Postgresql,duplicate,Top-N by blocks read,,unspecified
 62,Postgresql,Tables,Top-N by INSERT,,unspecified
 63,Postgresql,Tables,Top-N by UPDATE,,unspecified
 64,Postgresql,Tables,Top-N by DELETE,,unspecified
