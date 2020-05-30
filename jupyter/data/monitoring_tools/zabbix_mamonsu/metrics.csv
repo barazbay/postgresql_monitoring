@@ -130,3 +130,6 @@ metric_id,metric_name,description
 129,'CPU privileged time',
 130,'Network bytes total',
 131,'Network output queue length',
+132,'PostgreSQL: shared buffer dirty size',
+133,'PostgreSQL: shared buffer twice used size',
+134,'PostgreSQL: shared buffer size',
