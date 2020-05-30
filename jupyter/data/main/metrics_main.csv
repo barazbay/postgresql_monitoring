@@ -36,9 +36,9 @@ metric_main_id,category,subcategory,metric_name,extension,importance
 35,Postgresql,Autovacuum,Autovacuum queue and progress https://gitlab.com/snippets/1889668,,medium
 36,Postgresql,Bloat (estimated),Table bloat (estimated),,unspecified
 37,Postgresql,Bloat (estimated),Index bloat (estimated),,unspecified
-38,Postgresql,'"Checkpoints, bgwriter",Disk writes (by processes)',,unspecified
-39,Postgresql,'"Checkpoints, bgwriter",Pages dirtied by queries',,unspecified
-40,Postgresql,'"Checkpoints, bgwriter",Checkpoints issued',,medium
+38,Postgresql,'"Checkpoints and bgwriter",Disk writes (by processes)',,unspecified
+39,Postgresql,'"Checkpoints and bgwriter",Pages dirtied by queries',,unspecified
+40,Postgresql,'"Checkpoints and bgwriter",Checkpoints issued',,medium
 41,Postgresql,Connections,# of connections by state + max_connections,,medium
 42,Postgresql,Connections,Connections by client address (active + all),,medium
 43,Postgresql,Connections,Connections by app (active + all),,medium
