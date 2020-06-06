@@ -22,8 +22,7 @@ CREATE TABLE image_map_zabbix (
 CREATE TABLE dashboards_zabbix (
 	dashboard_id             integer                 DEFAULT NULL,
 	dashboard_image_id       integer                 DEFAULT NULL,
-    dashboard_name           text                    DEFAULT NULL,
-    PRIMARY KEY (dashboard_id)
+    dashboard_name           text                    DEFAULT NULL
 );
 
 CREATE TABLE images_zabbix (
