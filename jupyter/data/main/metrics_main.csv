@@ -1,4 +1,4 @@
-metric_main_id,category,subcategory,metric_name,extension,importance
+metric_id,category,subcategory,metric_name,extension,importance
 1,System,Basic,CPU,,high
 2,System,Basic,LA,,high
 3,System,Basic,Memory usage,,medium
@@ -52,14 +52,14 @@ metric_main_id,category,subcategory,metric_name,extension,importance
 51,Postgresql,Replication Destination (follower),Replication lag in bytes (for followers of the current node),,high
 52,Postgresql,Replication Destination (follower),Replication lag in bytes (for the current node compared to the leader),,high
 53,Postgresql,Replication Destination (follower),Replication lag in seconds (for the current node compared to the leader),,high
-54,Postgresql,Replication Origin (primary or replica with cascaded replication),,,unspecified
+54,Postgresql,Replication Origin (primary or replica with cascaded replication),deleted,,unspecified
 55,Postgresql,Replication Origin (primary or replica with cascaded replication),Unused replication slots / replication statuses,,high
 56,Postgresql,Replication Origin (primary or replica with cascaded replication),Amount of bytes for each replication slot,,high
 57,Postgresql,Replication Origin (primary or replica with cascaded replication),Replication lag phases (1 graph for each follower),,unspecified
 58,Postgresql,Tables,"Table sizes (total, heap, TOAST, indexes)",,unspecified
 59,Postgresql,Tables,Estimated rows,,unspecified
 60,Postgresql,Tables,Top-N by seqscan,,unspecified
-61,Postgresql,duplicate,Top-N by blocks read,,unspecified
+61,Postgresql,deleted_duplicate,Top-N by blocks read,,unspecified
 62,Postgresql,Tables,Top-N by INSERT,,unspecified
 63,Postgresql,Tables,Top-N by UPDATE,,unspecified
 64,Postgresql,Tables,Top-N by DELETE,,unspecified
